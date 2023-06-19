@@ -33,7 +33,7 @@ jobs:
             dist
             package.json
   deploy:
-    needs: [build, test]
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
